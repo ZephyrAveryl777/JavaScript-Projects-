@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+/**/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.85rem;
+  color: #fff;
+}
+body {
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(90, 92, 106, 1) 0%,
+    rgba(32, 45, 58, 1) 81.3%
+  );
+  font-family: 'Shadows Into Light', cursive;
+  color: rgb(255, 255, 255);
+  min-height: 100vh;
+}
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Comic Neue', cursive;
+  font-size: 1.85rem;
+  color: #fff;
+}
+
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(253, 101, 133, 1) 0%,
+    rgba(255, 211, 165, 1) 90%
+  );
+}
+form button {
+  color: #d88771;
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(238, 58, 136, 1) 11.2%,
+    rgba(128, 162, 245, 1) 91.1%
+  );
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+form button:hover {
+  background-image: linear-gradient(
+    65.4deg,
+    rgba(56, 248, 249, 1) -9.1%,
+    rgba(213, 141, 240, 1) 48%,
+    rgba(249, 56, 152, 1) 111.1%
+  );
+  color: white;
+}
+#todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#todo-list {
+  min-width: 60%;
+  list-style: none;
+}
+.todo {
+  margin: 0.5rem;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(253, 101, 133, 1) 0%,
+    rgba(255, 211, 165, 1) 90%
+  );
+  color: rgb(238, 228, 228);
+  font-size: 1.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+.todo li {
+  flex: 1;
+  font-size: 1.58rem;
+}
+.trash-btn,
+.complete-btn {
+  background-image: linear-gradient(
+    143.3deg,
+    rgba(216, 27, 96, 1) 33.1%,
+    rgba(237, 107, 154, 1) 74.9%
+  );
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.complete-btn {
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(67, 144, 233, 1) 0%,
+    rgba(78, 226, 198, 1) 90.1%
+  );
+}
+.todo-item {
+  padding: 0rem 0.5rem;
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.fall {
+  transform: translate(8rem) rotateZ(20deg);
+  opacity: 0;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+}
+#select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+  font-style: 1.5rem;
+}
+select {
+  color: #000;
+  width: 10rem;
+  cursor: pointer;
+  padding: 1rem;
+  font-size: 1.85rem;
+}
+#select::after {
+  content: '\25BC';
+  position: absolute;
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(48, 207, 208, 1) 11.2%,
+    rgba(51, 8, 103, 1) 92.5%
+  );
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  pointer-events: none;
+}
+
+#select:hover::after {
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(121, 203, 202, 1) 11.2%,
+    rgba(119, 161, 211, 1) 91.1%
+  );
+  color: #000000;
+}

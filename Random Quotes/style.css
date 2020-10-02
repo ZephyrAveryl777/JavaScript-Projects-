@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Eczar&family=Inknut+Antiqua&family=Rubik&family=Ruluko&display=swap');
+
+.container {
+    background-image: linear-gradient(315deg, #42378f 0%, #f53844 74%);
+    max-height: 800px;
+    margin: 10% auto auto auto;
+    border: 0.25rem solid #000;
+    border-radius: 1.25rem;
+
+}
+
+#icon {
+    position: relative;
+    top: -12px;
+    padding-right: 10px;
+    color: #f53844
+}
+
+#icon-right {
+    position: relative;
+    top: -12px;
+    padding-left: 10px;
+    color: #f53844
+}
+
+blockquote {
+    border-left: 10px solid #c41348;
+    margin: 30px 10px;
+    padding: 10px 30px;
+}
+
+blockquote:before {
+    color: #ccc;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+#quote-heading {
+    margin-top: 25px;
+    background-image: linear-gradient(315deg, #000000 0%, #422419 74%);
+    color: #ffffff;
+    padding: 10px;
+    font-family: 'Eczar', serif;
+    text-align: center;
+    border-radius: 1.25rem;
+}
+
+#quote-btn {
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    color: #ffffff;
+    background-image: linear-gradient(316deg, #523a78 0%, #ee696b 74%);
+    border: none;
+    font-family: 'Rubik', sans-serif;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 6px 12px;
+    text-align: center;
+    margin-bottom: 10px
+}
+
+#quote-body,
+#quote-wrapper {
+    padding: 15px 30px 15px 30px;
+    margin: 40px auto;
+    max-width: 1500px;
+    max-height: 500px;
+    text-align: center;
+    background-image: linear-gradient(147deg, #4d4855 0%, #000000 74%);
+    border: 1px solid #222;
+    border-radius: 1.2rem;
+}
+
+#quote {
+    font-family: 'Ruluko', sans-serif;
+    font-weight: 200;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+#author {
+    text-align: right;
+    font-size: 2rem;
+    line-height: 2;
+    letter-spacing: 2.5px;
+    padding-bottom: 30px;
+    color: #fff;
+    font-family: 'Dancing Script', cursive;
+}
+
+
+@media only screen and (max-width: 850px) {
+    #quotetext {
+        font-size: 25px;
+    }
+
+    .container {
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #quotetext {
+        font-size: 18px;
+    }
+
+}

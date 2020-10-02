@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h4>
+            <blockquote>In such seconds of decision entire futures are made.</blockquote>
+        </h4>
+        <h2>Stopwatch</h2>
+        <img src="https://cdn.pixabay.com/photo/2016/08/11/23/48/italy-1587287_1280.jpg" 
+        alt="Background Image">
+        <!-- This is to control the jerk in the UI -->
+        <div id="screen">
+            <p>
+                <span id="timer">00:00:00</span>
+            </p>
+        </div>
+            <button id="start" onclick="start()">Start</button>
+            <button id="stop" onclick="stop()">Stop</button>
+            <button id="reset" onclick="reset()">Reset</button> 
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>

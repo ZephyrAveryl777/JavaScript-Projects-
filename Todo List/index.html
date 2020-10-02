@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <!-- Bootstrap LUX Theme -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/lux/bootstrap.min.css"
+        integrity="sha384-9+PGKSqjRdkeAU7Eu4nkJU8RFaH8ace8HGXnkiKMP9I9Te0GJ4/km3L1Z8tXigpG" crossorigin="anonymous">
+    <!-- Some custom style -->
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div class="container-fluid-lg">
+        <header>
+            <h1>My Todo List</h1>
+        </header>
+        <div id="select">
+            <select name="todo" class="custom-select-sm" id="filter-todo">
+                <option value="all">ALL</option>
+                <option value="completed">Completed</option>
+                <option value="uncompleted">Uncompleted</option>
+            </select>
+        </div>
+        <form class="form-control-lg">
+            <div class="input-group">
+                <span class="input-group-addon">Todo Item details</span>
+                <input type="text" id="todo-input" class="form-control input-lg" aria-label="input-lg">
+                <button id="todo-button" class="btn" type="submit">
+                    <i class="fas fa-plus-square"></i>
+                </button>
+            </div>
+        </form>
+        <div id="todo-container">
+            <ul id="todo-list"></ul>
+        </div>
+        <!-- Bootstrap JavaScript -->
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <!-- Some custom JavaScript -->
+        <script src="./app.js"></script>
+    </div>
+</body>
+
+</html>

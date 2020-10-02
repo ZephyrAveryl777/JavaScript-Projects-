@@ -1,0 +1,194 @@
+/*
+======= 
+Fonts
+=======
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-image: linear-gradient(258deg, #2f4353 0.2%, #a09a93 60%);
+    color: #124980;
+    line-height: 1.5;
+}
+
+p {
+    margin-bottom: 1.25rem;
+    color: #46caeb;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    letter-spacing: 0.1rem;
+    text-transform: capitalize;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+    font-family: "Roboto", sans-serif;
+}
+
+@media screen and (min-width: 150vh) {
+    body {
+        width: 100vw;
+    }
+}
+
+/*
+=============== 
+Reviews
+===============
+*/
+main {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.underline {
+    height: 0.25rem;
+    width: 5rem;
+    background: hsl(205, 70%, 58%);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    width: 80vw;
+    max-width: 620px;
+}
+
+.review {
+    background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+    padding: 1.5rem 2rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 1.5s ease-in-out;
+    text-align: center;
+    border-radius: 0.85rem;
+}
+
+.review:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.img-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+}
+
+#person-img {
+    width: 100%;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+}
+
+.img-container::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f10e";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    transform: translateY(25%);
+    background-image: linear-gradient(315deg, #2884b8 0%, #d1bad2 74%);
+    color: #fff;
+}
+
+.img-container::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(315deg, #8d5185 0%, #a1bafe 74%);
+    position: absolute;
+    top: -0.25rem;
+    right: -0.5rem;
+    border-radius: 50%;
+}
+
+#author {
+    font-size: 1.25rem;
+    color: whitesmoke;
+    margin-bottom: 0.25rem;
+}
+
+#job {
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    color: hsl(175, 81%, 50%);
+    font-size: 0.85rem;
+}
+
+#info {
+    margin-bottom: 0.75rem;
+}
+
+.prev-btn,
+.next-btn {
+    color: #25bad4;
+    font-size: 1.25rem;
+    background: transparent;
+    border-color: transparent;
+    margin: 0 0.5rem;
+    transition: all 1.5s ease-in-out;
+    cursor: pointer;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    color: #53e7e7;
+}
+
+.random-btn {
+    margin-top: 0.5rem;
+    background-image: linear-gradient(315deg, #8d5185 0%, #a1bafe 74%);
+    color: hsl(206, 16%, 91%);
+    padding: 0.25rem 0.5rem;
+    text-transform: capitalize;
+    border-radius: 0.25rem;
+    transition: all 1.5s ease-in-out;
+    border-color: hsl(205, 78%, 60%);
+    cursor: pointer;
+    font-size: 0.985rem;
+    display: inline-flexbox;
+}
+
+.random-btn:hover {
+    background-image: linear-gradient(315deg, #2884b8 0%, #d1bad2 74%);
+    color: hsl(200, 23%, 97%);
+    border: transparent;
+    font-size: 0.985rem;
+    overflow: hidden;
+    display: inline-flexbox;
+}

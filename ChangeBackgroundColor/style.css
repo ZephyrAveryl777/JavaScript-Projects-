@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caladea:ital@1&display=swap');
+body {
+  text-align: center;
+  min-height: 100vh;
+  display: grid;
+  justify-content: center center;
+  align-items: center;
+  display: inline-flexbox;
+  place-items: center;
+}
+
+#hexBtn {
+  font-family: 'Caladea', cursive;
+  text-transform: uppercase;
+  color: #fff;
+  background: #222;
+  letter-spacing: 0.1rem;
+  display: table-row-group;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  border: 2px solid #222;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 0.25rem;
+  font-size: 1.75rem;
+  padding: 0.75rem 1.25rem;
+}
+#hexBtn:hover {
+  color: #fff;
+  background: #222;
+}
+#hexColor {
+  font-family: 'Fira Code', 'monospace';
+  background: #000;
+  color: #fff;
+  padding: 1rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.25;
+  border-radius: 0.25rem;
+  margin-bottom: 0.75rem;
+  text-transform: capitalize;
+}
+#hex {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  color: #1f96ce;
+}
